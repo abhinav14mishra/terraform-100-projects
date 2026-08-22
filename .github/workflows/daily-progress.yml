@@ -1,0 +1,83 @@
+name: Daily Terraform Progress
+
+on:
+  schedule:
+    - cron: "30 18 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  promote:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Promote next project
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if [ ! -d "queue" ]; then
+            echo "queue/ does not exist. Nothing to promote."
+            exit 0
+          fi
+
+          next_dir="$(find queue -mindepth 1 -maxdepth 1 -type d -printf '%f\n' | sort -V | head -n 1)"
+
+          if [ -z "${next_dir}" ]; then
+            echo "No projects remain in queue."
+            rmdir queue || true
+            exit 0
+          fi
+
+          mkdir -p src
+          mv "queue/${next_dir}" "src/${next_dir}"
+
+          day="${next_dir#day-}"
+          export DAY="${day}"
+
+          python3 <<'PY'
+          from pathlib import Path
+          import os
+          import re
+
+          day = os.environ["DAY"]
+          path = Path("README.md")
+          text = path.read_text(encoding="utf-8")
+
+          pattern = rf"(^\|\s*{re.escape(day)}\s*\|[^\n]*\|[^\n]*\|\s*)⏳(\s*\|)"
+          text, count = re.subn(pattern, r"\1✅\2", text, count=1)
+
+          if count == 0:
+              raise SystemExit(f"Could not find progress row for day {day}")
+
+          path.write_text(text, encoding="utf-8")
+          PY
+
+          if [ "$day" = "100" ]; then
+            rmdir queue || true
+          fi
+
+      - name: Commit and push
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add README.md src queue 2>/dev/null || git add README.md src
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+
+          git commit -m "chore: promote next Terraform project"
+          git push

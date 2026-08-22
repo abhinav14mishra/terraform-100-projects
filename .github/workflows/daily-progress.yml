@@ -13,61 +13,71 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
 
-      - name: Promote next project
+      - name: Promote next Terraform project
         shell: bash
         run: |
-          set -euo pipefail
+          set -e
+
+          echo "Looking for the next project..."
 
           if [ ! -d "queue" ]; then
-            echo "queue/ does not exist. Nothing to promote."
+            echo "queue/ does not exist."
             exit 0
           fi
 
-          next_dir="$(find queue -mindepth 1 -maxdepth 1 -type d -printf '%f\n' | sort -V | head -n 1)"
+          NEXT_DIR=$(find queue \
+            -mindepth 1 \
+            -maxdepth 1 \
+            -type d \
+            -printf '%f\n' |
+            sort |
+            head -n 1)
 
-          if [ -z "${next_dir}" ]; then
+          if [ -z "$NEXT_DIR" ]; then
             echo "No projects remain in queue."
-            rmdir queue || true
+            rmdir queue
             exit 0
           fi
+
+          echo "Next project: $NEXT_DIR"
+
+          DAY=$(echo "$NEXT_DIR" | sed 's/day-//')
+
+          echo "Day: $DAY"
 
           mkdir -p src
-          mv "queue/${next_dir}" "src/${next_dir}"
 
-          day="${next_dir#day-}"
-          export DAY="${day}"
+          echo "Moving $NEXT_DIR from queue/ to src/..."
 
-          python3 <<'PY'
-          from pathlib import Path
-          import os
-          import re
+          mv "queue/$NEXT_DIR" "src/$NEXT_DIR"
 
-          day = os.environ["DAY"]
-          path = Path("README.md")
-          text = path.read_text(encoding="utf-8")
+          echo "Updating README..."
 
-          pattern = rf"(^\|\s*{re.escape(day)}\s*\|[^\n]*\|[^\n]*\|\s*)⏳(\s*\|)"
-          text, count = re.subn(pattern, r"\1✅\2", text, count=1)
+          sed -i \
+            "s/| $DAY |/| $DAY |/; s/| $DAY |\\([^|]*\\)|\\([^|]*\\)| ⏳ |/| $DAY |\\1|\\2| ✅ |/" \
+            README.md
 
-          if count == 0:
-              raise SystemExit(f"Could not find progress row for day {day}")
-
-          path.write_text(text, encoding="utf-8")
-          PY
-
-          if [ "$day" = "100" ]; then
-            rmdir queue || true
+          if [ "$DAY" = "100" ]; then
+            echo "Day 100 completed. Removing queue/..."
+            rmdir queue
           fi
 
-      - name: Commit and push
+          echo "Promotion completed successfully."
+
+      - name: Show changes
+        run: |
+          git status
+          git diff -- README.md
+
+      - name: Commit changes
         shell: bash
         run: |
-          set -euo pipefail
+          set -e
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -75,9 +85,12 @@ jobs:
           git add README.md src queue 2>/dev/null || git add README.md src
 
           if git diff --cached --quiet; then
-            echo "No changes to commit."
+            echo "Nothing to commit."
             exit 0
           fi
 
           git commit -m "chore: promote next Terraform project"
+
+      - name: Push changes
+        run: |
           git push

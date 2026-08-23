@@ -7,7 +7,7 @@ A 100-project, hands-on Terraform journey from fundamentals to production-grade 
 | Day | Project | Concept | Status |
 |---:|---|---|:---:|
 | 001 | Terraform Hello World | Terraform workflow | ✅ |
-| 002 | AWS Provider Setup | Providers | ⏳ |
+| 002 | AWS Provider Setup | Providers | ✅ |
 | 003 | Create an S3 Bucket | Resources | ⏳ |
 | 004 | Variables & Outputs | Variables | ⏳ |
 | 005 | Resource Tags | Maps | ⏳ |

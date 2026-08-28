@@ -11,7 +11,7 @@ A 100-project, hands-on Terraform journey from fundamentals to production-grade 
 | 003 | Create an S3 Bucket | Resources | ✅ |
 | 004 | Variables & Outputs | Variables | ✅ |
 | 005 | Resource Tags | Maps | ✅ |
-| 006 | Multiple S3 Buckets | for_each | ⏳ |
+| 006 | Multiple S3 Buckets | for_each | ✅ |
 | 007 | Conditional Resources | count | ⏳ |
 | 008 | Terraform Data Sources | Data blocks | ⏳ |
 | 009 | AWS AMI Lookup | Data sources | ⏳ |

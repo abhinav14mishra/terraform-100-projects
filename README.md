@@ -14,7 +14,7 @@ A 100-project, hands-on Terraform journey from fundamentals to production-grade 
 | 006 | Multiple S3 Buckets | for_each | ✅ |
 | 007 | Conditional Resources | count | ✅ |
 | 008 | Terraform Data Sources | Data blocks | ✅ |
-| 009 | AWS AMI Lookup | Data sources | ⏳ |
+| 009 | AWS AMI Lookup | Data sources | ✅ |
 | 010 | Terraform Lifecycle | Lifecycle rules | ⏳ |
 | 011 | EC2 Instance | Compute | ⏳ |
 | 012 | EC2 with Variables | Parameterization | ⏳ |

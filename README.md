@@ -16,7 +16,7 @@ A 100-project, hands-on Terraform journey from fundamentals to production-grade 
 | 008 | Terraform Data Sources | Data blocks | ✅ |
 | 009 | AWS AMI Lookup | Data sources | ✅ |
 | 010 | Terraform Lifecycle | Lifecycle rules | ✅ |
-| 011 | EC2 Instance | Compute | ⏳ |
+| 011 | EC2 Instance | Compute | ✅ |
 | 012 | EC2 with Variables | Parameterization | ⏳ |
 | 013 | EC2 + Security Group | Dependencies | ⏳ |
 | 014 | EC2 + Key Pair | SSH infrastructure | ⏳ |

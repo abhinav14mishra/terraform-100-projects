@@ -19,7 +19,7 @@ A 100-project, hands-on Terraform journey from fundamentals to production-grade 
 | 011 | EC2 Instance | Compute | ✅ |
 | 012 | EC2 with Variables | Parameterization | ✅ |
 | 013 | EC2 + Security Group | Dependencies | ✅ |
-| 014 | EC2 + Key Pair | SSH infrastructure | ⏳ |
+| 014 | EC2 + Key Pair | SSH infrastructure | ✅ |
 | 015 | EC2 + EBS | Resource relationships | ⏳ |
 | 016 | VPC Creation | Networking | ⏳ |
 | 017 | Public Subnet | Subnets | ⏳ |

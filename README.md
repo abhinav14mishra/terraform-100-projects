@@ -24,7 +24,7 @@ A 100-project, hands-on Terraform journey from fundamentals to production-grade 
 | 016 | VPC Creation | Networking | ✅ |
 | 017 | Public Subnet | Subnets | ✅ |
 | 018 | Internet Gateway | Routing | ✅ |
-| 019 | Route Tables | Network routing | ⏳ |
+| 019 | Route Tables | Network routing | ✅ |
 | 020 | Multi-AZ VPC | Availability Zones | ⏳ |
 | 021 | NAT Gateway | Private networking | ⏳ |
 | 022 | Public & Private Subnets | Network architecture | ⏳ |

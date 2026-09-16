@@ -31,7 +31,7 @@ A 100-project, hands-on Terraform journey from fundamentals to production-grade 
 | 023 | VPC Module | Modules | ✅ |
 | 024 | EC2 Module | Reusable modules | ✅ |
 | 025 | S3 Module | Module interfaces | ✅ |
-| 026 | Module Variables | Module inputs | ⏳ |
+| 026 | Module Variables | Module inputs | ✅ |
 | 027 | Module Outputs | Module outputs | ⏳ |
 | 028 | Module Composition | Nested modules | ⏳ |
 | 029 | Git-Based Module | Module sources | ⏳ |

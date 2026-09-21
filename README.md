@@ -36,7 +36,7 @@ A 100-project, hands-on Terraform journey from fundamentals to production-grade 
 | 028 | Module Composition | Nested modules | ✅ |
 | 029 | Git-Based Module | Module sources | ✅ |
 | 030 | Versioned Module | Module versioning | ✅ |
-| 031 | Remote State | Backend | ⏳ |
+| 031 | Remote State | Backend | ✅ |
 | 032 | S3 Remote Backend | Remote state | ⏳ |
 | 033 | State Locking | State safety | ⏳ |
 | 034 | State Inspection | State commands | ⏳ |

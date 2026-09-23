@@ -38,7 +38,7 @@ A 100-project, hands-on Terraform journey from fundamentals to production-grade 
 | 030 | Versioned Module | Module versioning | ✅ |
 | 031 | Remote State | Backend | ✅ |
 | 032 | S3 Remote Backend | Remote state | ✅ |
-| 033 | State Locking | State safety | ⏳ |
+| 033 | State Locking | State safety | ✅ |
 | 034 | State Inspection | State commands | ⏳ |
 | 035 | State Move | terraform state mv | ⏳ |
 | 036 | State Removal | terraform state rm | ⏳ |

@@ -41,7 +41,7 @@ A 100-project, hands-on Terraform journey from fundamentals to production-grade 
 | 033 | State Locking | State safety | ✅ |
 | 034 | State Inspection | State commands | ✅ |
 | 035 | State Move | terraform state mv | ✅ |
-| 036 | State Removal | terraform state rm | ⏳ |
+| 036 | State Removal | terraform state rm | ✅ |
 | 037 | Import Existing EC2 | Import | ⏳ |
 | 038 | Import Existing S3 | Import | ⏳ |
 | 039 | Infrastructure Drift | Drift | ⏳ |

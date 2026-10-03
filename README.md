@@ -48,7 +48,7 @@ A 100-project, hands-on Terraform journey from fundamentals to production-grade 
 | 040 | Drift Recovery | State reconciliation | ✅ |
 | 041 | Terraform Locals | locals | ✅ |
 | 042 | String Functions | Functions | ✅ |
-| 043 | Collection Functions | Collections | ⏳ |
+| 043 | Collection Functions | Collections | ✅ |
 | 044 | for Expressions | Expressions | ⏳ |
 | 045 | Dynamic Blocks | Dynamic configuration | ⏳ |
 | 046 | try & can | Error handling | ⏳ |

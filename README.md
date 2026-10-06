@@ -51,7 +51,7 @@ A 100-project, hands-on Terraform journey from fundamentals to production-grade 
 | 043 | Collection Functions | Collections | ✅ |
 | 044 | for Expressions | Expressions | ✅ |
 | 045 | Dynamic Blocks | Dynamic configuration | ✅ |
-| 046 | try & can | Error handling | ⏳ |
+| 046 | try & can | Error handling | ✅ |
 | 047 | lookup & merge | Maps | ⏳ |
 | 048 | flatten & concat | Collections | ⏳ |
 | 049 | templatefile | Templates | ⏳ |

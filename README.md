@@ -54,7 +54,7 @@ A 100-project, hands-on Terraform journey from fundamentals to production-grade 
 | 046 | try & can | Error handling | ✅ |
 | 047 | lookup & merge | Maps | ✅ |
 | 048 | flatten & concat | Collections | ✅ |
-| 049 | templatefile | Templates | ⏳ |
+| 049 | templatefile | Templates | ✅ |
 | 050 | jsonencode / jsondecode | Encoding | ⏳ |
 | 051 | Environment Architecture | Environments | ⏳ |
 | 052 | Dev Environment | Environment isolation | ⏳ |

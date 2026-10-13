@@ -57,7 +57,7 @@ A 100-project, hands-on Terraform journey from fundamentals to production-grade 
 | 049 | templatefile | Templates | ✅ |
 | 050 | jsonencode / jsondecode | Encoding | ✅ |
 | 051 | Environment Architecture | Environments | ✅ |
-| 052 | Dev Environment | Environment isolation | ⏳ |
+| 052 | Dev Environment | Environment isolation | ✅ |
 | 053 | Staging Environment | Environment isolation | ⏳ |
 | 054 | Production Environment | Environment isolation | ⏳ |
 | 055 | Terraform Workspaces | Workspaces | ⏳ |

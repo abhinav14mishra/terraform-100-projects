@@ -62,7 +62,7 @@ A 100-project, hands-on Terraform journey from fundamentals to production-grade 
 | 054 | Production Environment | Environment isolation | ✅ |
 | 055 | Terraform Workspaces | Workspaces | ✅ |
 | 056 | Workspace-Based Infrastructure | State isolation | ✅ |
-| 057 | Multi-Region AWS | Providers | ⏳ |
+| 057 | Multi-Region AWS | Providers | ✅ |
 | 058 | Provider Aliases | Multiple providers | ⏳ |
 | 059 | Multi-Account AWS | Account isolation | ⏳ |
 | 060 | Cross-Region S3 | Provider aliases | ⏳ |

@@ -67,7 +67,7 @@ A 100-project, hands-on Terraform journey from fundamentals to production-grade 
 | 059 | Multi-Account AWS | Account isolation | ✅ |
 | 060 | Cross-Region S3 | Provider aliases | ✅ |
 | 061 | ALB Infrastructure | Load balancing | ✅ |
-| 062 | Auto Scaling Group | Autoscaling | ⏳ |
+| 062 | Auto Scaling Group | Autoscaling | ✅ |
 | 063 | EC2 + ALB + ASG | Complete architecture | ⏳ |
 | 064 | RDS Infrastructure | Managed database | ⏳ |
 | 065 | Three-Tier Architecture | Architecture | ⏳ |

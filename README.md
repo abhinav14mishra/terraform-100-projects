@@ -70,7 +70,7 @@ A 100-project, hands-on Terraform journey from fundamentals to production-grade 
 | 062 | Auto Scaling Group | Autoscaling | ✅ |
 | 063 | EC2 + ALB + ASG | Complete architecture | ✅ |
 | 064 | RDS Infrastructure | Managed database | ✅ |
-| 065 | Three-Tier Architecture | Architecture | ⏳ |
+| 065 | Three-Tier Architecture | Architecture | ✅ |
 | 066 | ECS Infrastructure | Containers | ⏳ |
 | 067 | ECS + ALB | Container platform | ⏳ |
 | 068 | EKS Infrastructure | Kubernetes | ⏳ |

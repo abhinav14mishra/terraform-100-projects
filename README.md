@@ -73,7 +73,7 @@ A 100-project, hands-on Terraform journey from fundamentals to production-grade 
 | 065 | Three-Tier Architecture | Architecture | ✅ |
 | 066 | ECS Infrastructure | Containers | ✅ |
 | 067 | ECS + ALB | Container platform | ✅ |
-| 068 | EKS Infrastructure | Kubernetes | ⏳ |
+| 068 | EKS Infrastructure | Kubernetes | ✅ |
 | 069 | Terraform + Kubernetes | Kubernetes provider | ⏳ |
 | 070 | Terraform + Helm | Helm provider | ⏳ |
 | 071 | IAM Users & Policies | IAM | ⏳ |

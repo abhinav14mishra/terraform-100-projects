@@ -75,7 +75,7 @@ A 100-project, hands-on Terraform journey from fundamentals to production-grade 
 | 067 | ECS + ALB | Container platform | ✅ |
 | 068 | EKS Infrastructure | Kubernetes | ✅ |
 | 069 | Terraform + Kubernetes | Kubernetes provider | ✅ |
-| 070 | Terraform + Helm | Helm provider | ⏳ |
+| 070 | Terraform + Helm | Helm provider | ✅ |
 | 071 | IAM Users & Policies | IAM | ⏳ |
 | 072 | IAM Roles | IAM | ⏳ |
 | 073 | IAM Policy Documents | aws_iam_policy_document | ⏳ |

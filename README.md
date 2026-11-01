@@ -77,7 +77,7 @@ A 100-project, hands-on Terraform journey from fundamentals to production-grade 
 | 069 | Terraform + Kubernetes | Kubernetes provider | ✅ |
 | 070 | Terraform + Helm | Helm provider | ✅ |
 | 071 | IAM Users & Policies | IAM | ✅ |
-| 072 | IAM Roles | IAM | ⏳ |
+| 072 | IAM Roles | IAM | ✅ |
 | 073 | IAM Policy Documents | aws_iam_policy_document | ⏳ |
 | 074 | Least-Privilege IAM | Security | ⏳ |
 | 075 | Secrets with Terraform | Sensitive values | ⏳ |

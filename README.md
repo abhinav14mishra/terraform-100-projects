@@ -80,7 +80,7 @@ A 100-project, hands-on Terraform journey from fundamentals to production-grade 
 | 072 | IAM Roles | IAM | ✅ |
 | 073 | IAM Policy Documents | aws_iam_policy_document | ✅ |
 | 074 | Least-Privilege IAM | Security | ✅ |
-| 075 | Secrets with Terraform | Sensitive values | ⏳ |
+| 075 | Secrets with Terraform | Sensitive values | ✅ |
 | 076 | AWS Secrets Manager | Secret management | ⏳ |
 | 077 | Terraform Validation | Validation | ⏳ |
 | 078 | Variable Validation Rules | Input validation | ⏳ |

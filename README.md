@@ -82,7 +82,7 @@ A 100-project, hands-on Terraform journey from fundamentals to production-grade 
 | 074 | Least-Privilege IAM | Security | ✅ |
 | 075 | Secrets with Terraform | Sensitive values | ✅ |
 | 076 | AWS Secrets Manager | Secret management | ✅ |
-| 077 | Terraform Validation | Validation | ⏳ |
+| 077 | Terraform Validation | Validation | ✅ |
 | 078 | Variable Validation Rules | Input validation | ⏳ |
 | 079 | Preconditions & Postconditions | Resource validation | ⏳ |
 | 080 | Terraform Tests | Testing | ⏳ |

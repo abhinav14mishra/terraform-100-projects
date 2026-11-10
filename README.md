@@ -85,7 +85,7 @@ A 100-project, hands-on Terraform journey from fundamentals to production-grade 
 | 077 | Terraform Validation | Validation | ✅ |
 | 078 | Variable Validation Rules | Input validation | ✅ |
 | 079 | Preconditions & Postconditions | Resource validation | ✅ |
-| 080 | Terraform Tests | Testing | ⏳ |
+| 080 | Terraform Tests | Testing | ✅ |
 | 081 | Terraform in GitHub Actions | CI | ⏳ |
 | 082 | Automated Terraform Plan | CI pipeline | ⏳ |
 | 083 | Terraform Apply Pipeline | CD | ⏳ |

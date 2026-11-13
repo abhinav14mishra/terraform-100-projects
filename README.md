@@ -89,7 +89,7 @@ A 100-project, hands-on Terraform journey from fundamentals to production-grade 
 | 081 | Terraform in GitHub Actions | CI | ✅ |
 | 082 | Automated Terraform Plan | CI pipeline | ✅ |
 | 083 | Terraform Apply Pipeline | CD | ✅ |
-| 084 | PR Terraform Workflow | Pull-request automation | ⏳ |
+| 084 | PR Terraform Workflow | Pull-request automation | ✅ |
 | 085 | Remote State CI/CD | CI state management | ⏳ |
 | 086 | Terraform Security Scan | Checkov/tfsec | ⏳ |
 | 087 | Terraform Formatting & Validation | Quality gates | ⏳ |

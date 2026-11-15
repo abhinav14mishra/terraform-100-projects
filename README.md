@@ -91,7 +91,7 @@ A 100-project, hands-on Terraform journey from fundamentals to production-grade 
 | 083 | Terraform Apply Pipeline | CD | ✅ |
 | 084 | PR Terraform Workflow | Pull-request automation | ✅ |
 | 085 | Remote State CI/CD | CI state management | ✅ |
-| 086 | Terraform Security Scan | Checkov/tfsec | ⏳ |
+| 086 | Terraform Security Scan | Checkov/tfsec | ✅ |
 | 087 | Terraform Formatting & Validation | Quality gates | ⏳ |
 | 088 | Terraform Module Testing | Module quality | ⏳ |
 | 089 | Infrastructure Deployment Pipeline | Full CI/CD | ⏳ |

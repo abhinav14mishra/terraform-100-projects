@@ -93,7 +93,7 @@ A 100-project, hands-on Terraform journey from fundamentals to production-grade 
 | 085 | Remote State CI/CD | CI state management | ✅ |
 | 086 | Terraform Security Scan | Checkov/tfsec | ✅ |
 | 087 | Terraform Formatting & Validation | Quality gates | ✅ |
-| 088 | Terraform Module Testing | Module quality | ⏳ |
+| 088 | Terraform Module Testing | Module quality | ✅ |
 | 089 | Infrastructure Deployment Pipeline | Full CI/CD | ⏳ |
 | 090 | Terraform with OIDC | Keyless AWS authentication | ⏳ |
 | 091 | Policy as Code | Governance | ⏳ |

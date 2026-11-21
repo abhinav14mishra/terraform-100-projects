@@ -96,7 +96,7 @@ A 100-project, hands-on Terraform journey from fundamentals to production-grade 
 | 088 | Terraform Module Testing | Module quality | ✅ |
 | 089 | Infrastructure Deployment Pipeline | Full CI/CD | ✅ |
 | 090 | Terraform with OIDC | Keyless AWS authentication | ✅ |
-| 091 | Policy as Code | Governance | ⏳ |
+| 091 | Policy as Code | Governance | ✅ |
 | 092 | Terraform Cost Controls | FinOps | ⏳ |
 | 093 | Reusable AWS Infrastructure Module | Advanced modules | ⏳ |
 | 094 | Enterprise Module Repository | Module architecture | ⏳ |

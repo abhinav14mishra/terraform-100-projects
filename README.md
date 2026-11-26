@@ -101,7 +101,7 @@ A 100-project, hands-on Terraform journey from fundamentals to production-grade 
 | 093 | Reusable AWS Infrastructure Module | Advanced modules | ✅ |
 | 094 | Enterprise Module Repository | Module architecture | ✅ |
 | 095 | Multi-Environment Architecture | Enterprise design | ✅ |
-| 096 | Infrastructure Migration | Migration | ⏳ |
+| 096 | Infrastructure Migration | Migration | ✅ |
 | 097 | Zero-Downtime Terraform Refactoring | Refactoring | ⏳ |
 | 098 | Production Terraform Architecture | Production design | ⏳ |
 | 099 | Complete AWS Platform | Capstone | ⏳ |
